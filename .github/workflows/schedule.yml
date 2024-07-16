@@ -1,0 +1,50 @@
+name: Schedule Run
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+
+env:
+  BUILD_SH: build.sh
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Get REPO
+      run: |
+        echo "version=$(curl -H "Authorization: token ${{ secrets.MAGIC_TOKEN }}" -sL https://api.github.com/repos/WE1ZARD/Magic-Beta/releases/latest | jq -r .tag_name)" >> $GITHUB_ENV
+        echo "REPO=$(echo $GITHUB_REPOSITORY | sed 's/WE1ZARD\///')" >> $GITHUB_ENV
+
+    - name: Git Clone
+      run: |
+        git clone --recursive https://WE1ZARD:${{ secrets.MAGIC_TOKEN }}@github.com/WE1ZARD/Magic-Suite-NX.git
+
+    - name: Build
+      run: |
+        chmod +x ./Magic-Suite-NX/$BUILD_SH
+        ./Magic-Suite-NX/$BUILD_SH
+        mv ./Magic-Suite-NX/update_log.md ./
+        mv ./Magic-Suite-NX/user_guide.md ./
+        cp ./update_log.md ./release_note.md
+        echo -e "![Magic Suite](https://pic.imgdb.cn/item/6682614cd9c307b7e99184c9.gif)\n\n[QQ群: 737375560](https://qm.qq.com/q/RYsABoQpi0)\n\n解压密码: https://github.com/WE1ZARD\n\n<details>\n<summary>更新日志</summary>\n\n$(cat ./release_note.md)" > ./release_note.md
+        cat >> ./release_note.md << EOF
+        </details>
+        
+        ![releases](https://img.shields.io/github/downloads/WE1ZARD/Magic-Suite/total)
+        EOF
+        echo -e "![Magic Suite](https://pic.imgdb.cn/item/6682614cd9c307b7e99184c9.gif)\n\n[QQ群: 737375560](https://qm.qq.com/q/RYsABoQpi0)\n\n解压密码: https://github.com/WE1ZARD\n\n$(cat ./update_log.md)" > ./update_log.md
+        echo -e "![Magic Suite](https://pic.imgdb.cn/item/6682614cd9c307b7e99184c9.gif)\n\n[QQ群: 737375560](https://qm.qq.com/q/RYsABoQpi0)\n\n解压密码: https://github.com/WE1ZARD\n\n$(cat ./user_guide.md)" > ./user_guide.md  
+        zip -rq -P https://github.com/WE1ZARD '${{env.REPO}}.zip' ./Magic-Suite ./bootloader ./update_log.md ./user_guide.md ./LICENSE
+
+    - name: Release
+      uses: softprops/action-gh-release@master
+      with:
+        body_path: ./release_note.md
+        tag_name: '${{env.version}}'
+        files: |
+          ${{env.REPO}}.zip
