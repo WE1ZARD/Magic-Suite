@@ -63,6 +63,7 @@
 
 - [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere) (分支)
 - [Hekate](https://github.com/CTCaer/hekate)
+- [Hekate-Toolbox](https://github.com/WerWolv/Hekate-Toolbox)
 - [Sigpatches](https://sigmapatches.coomer.party)
 - [FPSLocker](https://github.com/masagrator/FPSLocker) (分支)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
@@ -72,6 +73,9 @@
 - [DBI](https://github.com/rashevskyv/dbi)
 - [Lockpick RCM](https://github.com/s1204IT/Lockpick_RCM)
 - [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer) (分支)
+- [JKSV](https://github.com/J-D-K/JKSV) (分支)
+- [Linkalho](https://github.com/HamletDuFromage/linkalho)
+
 </details>
 
 <details>
