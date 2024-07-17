@@ -47,7 +47,7 @@ jobs:
       uses: softprops/action-gh-release@master
       with:
         body_path: ./release_note.md
-        tag_name: '${{env.version}}'
+        tag_name: 'RELEASE'
         files: |
           AIO.zip
           package_Magic.zip
