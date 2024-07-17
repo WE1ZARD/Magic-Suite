@@ -21,6 +21,7 @@
 ## 交流和支持
 - [QQ群](https://qm.qq.com/q/RYsABoQpi0): ```737375560```
 - [DC群](https://discord.gg/kZDgtSPQCn): ```Magic-Suite```
+- [爱发电](https://afdian.com/a/weizard): ```weizard```
 
 ## 全新安装说明
 
@@ -53,6 +54,9 @@
 ## 特斯拉套件
 - Magic-Suite
 - Settings
+
+## 可选插件
+- [坚果云搬运地址](https://www.jianguoyun.com/p/DQ6eZFkQgcS1DBir4NgFIAA)
 
 ## 超频教程
 - [SWITCH完整超频教程](https://www.bilibili.com/opus/953913305942982710)
