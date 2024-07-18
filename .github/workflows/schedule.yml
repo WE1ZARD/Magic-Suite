@@ -2,7 +2,8 @@ name: Schedule Run
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 env:
   BUILD_SH: build.sh
@@ -43,12 +44,12 @@ jobs:
         echo -e "![Magic Suite](https://pic.imgdb.cn/item/6682614cd9c307b7e99184c9.gif)\n\n[QQ群:](https://qm.qq.com/q/RYsABoQpi0) \`\`\`737375560\`\`\`\n\n解压密码: \`\`\`https://github.com/WE1ZARD\`\`\`\n\n$(cat ./user_guide.md)" > ./user_guide.md  
         zip -rq 'AIO.zip' ./Magic-Suite ./bootloader ./update_log.md ./user_guide.md ./LICENSE
 
-        
     - name: Release
       uses: softprops/action-gh-release@master
       with:
         body_path: ./release_note.md
-        tag_name: '${{env.version}}'
+        prerelease: true
+        tag_name: 'Pre-Release'
         files: |
           AIO.zip
           package_Magic.zip
