@@ -26,6 +26,7 @@ jobs:
         git clone --recursive https://WE1ZARD:${{ secrets.MAGIC_TOKEN }}@github.com/WE1ZARD/Magic-Suite-NX.git
         curl -sL -H "Authorization: token ${{ secrets.MAGIC_TOKEN }}" -sL https://api.github.com/repos/WE1ZARD/Magic/releases/latest | jq '.assets' | jq '.[1].url' | xargs -I {} curl -sL {} -H "Authorization: token ${{ secrets.MAGIC_TOKEN }}" -H 'Accept:application/octet-stream' -o package_Magic.zip
         curl -sL -H "Authorization: token ${{ secrets.MAGIC_TOKEN }}" -sL https://api.github.com/repos/WE1ZARD/Settings/releases/latest | jq '.assets' | jq '.[0].url' | xargs -I {} curl -sL {} -H "Authorization: token ${{ secrets.MAGIC_TOKEN }}" -H 'Accept:application/octet-stream' -o package_Settings.zip
+        curl -sL -H "Authorization: token ${{ secrets.MAGIC_TOKEN }}" -sL https://api.github.com/repos/WE1ZARD/Updater/releases/latest | jq '.assets' | jq '.[0].url' | xargs -I {} curl -sL {} -H "Authorization: token ${{ secrets.MAGIC_TOKEN }}" -H 'Accept:application/octet-stream' -o package_Updater.zip
 
     - name: Build
       run: |
@@ -34,7 +35,7 @@ jobs:
         mv ./Magic-Suite-NX/update_log.md ./
         mv ./Magic-Suite-NX/user_guide.md ./
         cp ./update_log.md ./release_note.md
-        echo -e "![Magic Suite](https://pic.imgdb.cn/item/6682614cd9c307b7e99184c9.gif)\n\n[QQ群:](https://qm.qq.com/q/RYsABoQpi0) \`\`\`737375560\`\`\`\n\n解压密码: \`\`\`https://github.com/WE1ZARD\`\`\`\n\n<details>\n<summary>更新日志</summary>\n\n$(cat ./release_note.md)" > ./release_note.md
+        echo -e "<details>\n<summary>更新日志</summary>\n\n$(cat ./release_note.md)" > ./release_note.md
         cat >> ./release_note.md << EOF
         </details>
         
@@ -53,3 +54,4 @@ jobs:
           AIO.zip
           package_Magic.zip
           package_Settings.zip
+          package_Updater.zip
