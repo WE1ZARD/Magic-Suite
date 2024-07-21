@@ -1,9 +1,4 @@
-<p align="left">
-<a href="https://creativecommons.org/licenses/by-nd/4.0/deed.zh-hans"><img alt="CC BY-ND 4.0-CN)" src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg"></a>
-<a href="https://github.com/WE1ZARD/Magic-Suite/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/WE1ZARD/Magic-Suite"></a>
-<a href="https://github.com/WE1ZARD/Magic-Suite/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/WE1ZARD/Magic-Suite/total"></a>
-<br>
-</p>
+[![LICENSE](https://img.shields.io/badge/License-CC_BY--ND_4.0-%23DDDDDD?labelColor=%23393939)](https://creativecommons.org/licenses/by-nd/4.0/deed.zh-hans) [![QQ](https://img.shields.io/badge/Q%E7%BE%A4-737375560-%233385d6?labelColor=%23393939)](https://qm.qq.com/q/RYsABoQpi0 '加入QQ群') [![Donate](https://img.shields.io/badge/%E7%88%B1%E5%8F%91%E7%94%B5-weizard-%239575d7?labelColor=%23393939)](https://afdian.com/a/weizard '请我喝可乐') [![Firmware](https://img.shields.io/badge/%E5%9B%BA%E4%BB%B6-18.1.0-%2397c900?labelColor=%23393939)](https://darthsternie.net/switch-firmwares/ '下载固件') [![magic](https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-Magic_Suite-%2325c2a0?labelColor=%23393939)](https://mirror.ghproxy.com/https://github.com/WE1ZARD/Magic-Suite/releases/download/Pre-Release/AIO.zip '下载整合包')
 
 # Magic Suite
 此项目仅为展示SWITCH硬件潜能学习交流之用, 非以盈利为商业目的.
@@ -17,11 +12,6 @@
 - **L + 加号** 呼出特斯拉菜单
 - **左摇杆 + 右摇杆** 退出监控插件
 - 更多操作说明: 见压缩包user_guide.md
-
-## 交流和支持
-- [QQ群](https://qm.qq.com/q/RYsABoQpi0): ```737375560```
-- [DC群](https://discord.gg/kZDgtSPQCn): ```Magic-Suite```
-- [爱发电](https://afdian.com/a/weizard): ```weizard```
 
 ## 全新安装说明
 
@@ -54,13 +44,14 @@
 ## 特斯拉套件
 - Magic-Suite
 - Settings
+- Updater
 
 ## 可选插件
 - [坚果云搬运地址](https://www.jianguoyun.com/p/DQ6eZFkQgcS1DBir4NgFIAA)
 
 ## 超频教程
 - [SWITCH完整超频教程](https://www.bilibili.com/opus/953913305942982710)
-
+- [中英双语超频指南](https://www.jianguoyun.com/p/DdnIqIkQgcS1DBjt4NoFIAA)
 
 <details>
 <summary>包含哪些</summary>
