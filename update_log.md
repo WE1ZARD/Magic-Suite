@@ -1,3 +1,17 @@
+## 1.4.2a
+- 加入 `Misc > NROs > Goldleaf`
+- 加入 `Misc > NROs > DBI`
+- 修复SimpleModManager卸载错误
+- 加入离线账号关联 `Misc > NROs > linkalho`
+- 加入实时风扇控制 `Overlays > FanControl`
+- 加入用户指南 `Packages > Guides`
+- Update All现在连同特斯拉菜单一起更新, 不仅仅更新packages
+- Pacakges 现在也支持独立安装卸载
+- 采用新的命令行
+- 更新Updater 1.1.1
+- 加入实时风扇控制插件FanControl
+- 更新sys-clk-oc 1.0.1: 修复2601实时频率显示bug
+
 ## 1.4.2
 - 修复cpu table auto针对高speedo优化
 - 新增Shift Fix 1: 防止table切换
