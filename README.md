@@ -3,7 +3,7 @@
 ![header](https://github.com/WE1ZARD/Magic-Suite/blob/master/magic%20github%20header.png)
 
 **Magic Suite** 是一个以超频为核心, 深度优化的易用高效整合包, 配备完整的文字说明及视频教程. 
-除必备的基础功能外, 已实现绝大部分工具的在线更新和安装, 简化流程, 无需电脑操作. 
+除必备的基础功能外, 已实现绝大部分工具的在线更新和安装, 简化流程, 无需电脑操作.
 
 ## 使用说明
 - [查看详情](https://www.cnblogs.com/we1zard/articles/18455163)
@@ -12,7 +12,7 @@
 - 最新固件系统的全系列SWITCH
 - Atmosphere 虚拟系统 (默认)
 - SysNAND 真实系统
-- Recover 恢复系统
+- Restore 恢复系统
 
 ## 使用须知
 - 超频可能导致(包括但不限于): 引起系统不稳定, 破坏, 发热, 耗电, 损坏硬件等可能的后果
