@@ -1,0 +1,17 @@
+本压缩包内所有内容均为独立组件, 每个组件的版权归各自作者所有, 可在源码地址查询相关的版权信息.
+
+源码地址:
+https://github.com/Atmosphere-NX/Atmosphere.git
+https://github.com/averne/MasterVolume.git
+https://github.com/CTCaer/hekate.git
+https://github.com/efosamark/Uberhand-Overlay.git
+https://github.com/impeeza/Lockpick_RCM.git
+https://github.com/ITotalJustice/sphaira.git
+https://github.com/masagrator/FPSLocker.git
+https://github.com/masagrator/ReverseNX-RT.git
+https://github.com/masagrator/SaltyNX.git
+https://github.com/masagrator/Status-Monitor-Overlay.git
+https://github.com/suchmememanyskill/TegraExplorer.git
+https://github.com/WerWolv/Hekate-Toolbox.git
+https://github.com/WerWolv/nx-ovlloader.git
+https://github.com/WerWolv/nx-ovlloader.git
