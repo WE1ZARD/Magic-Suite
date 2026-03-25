@@ -14,4 +14,3 @@ https://github.com/masagrator/Status-Monitor-Overlay.git
 https://github.com/suchmememanyskill/TegraExplorer.git
 https://github.com/WerWolv/Hekate-Toolbox.git
 https://github.com/WerWolv/nx-ovlloader.git
-https://github.com/WerWolv/nx-ovlloader.git
